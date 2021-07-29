@@ -7,23 +7,23 @@ import Link from 'next/link';
 const restaurents = () => {
     return (
         <div className=" bg-gradient-to-r from-gray-100 to-gray-50 h-full " >
-        <div className="flex shadow-sm bg-gray-50  p-4 justify-between border-b py-3 mt-1 max-w-full">
+        <div className="flex shadow-sm bg-gray-50  p-4 justify-between">
             <div className="flex space-x-3  ">
                 <p className="text-gray-600">Registerd Restaurents</p>
             </div>
             <div className="flex space-x-4 text-gray-400 mr-3">
                     <Link href="../form/addRestaurent">
-                        <div className="flex-row flex text-gray-600 font-semibold hover:bg-gray-50 hover:text-green-600  cursor-pointer">
+                        <div className="flex-row flex">
                         <AddIcon/>
-                        <p>Add</p>
+                        <p className="text-gray-600 font-semibold hover:bg-gray-50 hover:text-green-600  cursor-pointer">Add</p>
                         </div>
                     </Link>
-                    {/* <Link> */}
-                        <div className="flex-row flex text-gray-600 font-semibold hover:bg-gray-50 hover:text-green-600  cursor-pointer">
+                    <Link href="">
+                        <div className="flex-row flex">
                         <DeleteIcon/>
-                        <p>Delete</p>
+                        <p className="text-gray-600 font-semibold hover:bg-gray-50 hover:text-green-600  cursor-pointer">Delete</p>
                         </div>
-                    {/* </Link> */}
+                    </Link>
         </div>
         </div>
             <div className="text-center font-semibold flex grid p-4 justify-evenly grid-cols-10 rounded-xl border border-gray-100 bg-white mt-5 divide-x">

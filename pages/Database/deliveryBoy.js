@@ -5,6 +5,9 @@ import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import DirectionsBikeIcon from '@material-ui/icons/DirectionsBike';
+import Link from 'next/link'
+import AddIcon from '@material-ui/icons/Add';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const Deliveryboy = () => {
     return (
@@ -12,9 +15,23 @@ const Deliveryboy = () => {
         <div className="flex shadow-sm bg-gray-50  p-4 justify-between">
             <div className="flex space-x-3  ">
                 <p className="text-gray-600">Deliveryboy</p>
+                </div>
+                <div className="flex space-x-4 text-gray-400 mr-3">
+                    <Link href="../form/addRestaurent">
+                        <div className="flex-row flex text-gray-600 font-semibold hover:bg-gray-50 hover:text-green-600  cursor-pointer">
+                        <AddIcon/>
+                        <p>Add</p>
+                        </div>
+                    </Link>
+                    {/* <Link> */}
+                        <div className="flex-row flex text-gray-600 font-semibold hover:bg-gray-50 hover:text-green-600  cursor-pointer">
+                        <DeleteIcon/>
+                        <p>Delete</p>
+                        </div>
+                    {/* </Link> */}
             </div>
         </div>
-            <div className="text-center font-semibold flex grid p-4 justify-evenly grid-cols-10 rounded-xl border border-gray-100 bg-white mt-10 divide-x mb-1">
+            <div className="text-center font-semibold flex grid p-4 justify-evenly grid-cols-10 rounded-xl border border-gray-100 bg-white mt-5 divide-x mb-1">
                 <div>Id</div>
                 <div>Image</div>
                 <div>Name</div>
