@@ -35,7 +35,7 @@ const login = () => {
                         
                         <Link href='../../Navigation/dashbord'>
                             <div>
-                                <button class="block w-full bg-yellow-400 hover:bg-yellow-300 p-4 rounded text-yellow-900 hover:text-yellow-800 transition duration-300">Sign Up</button>
+                                <button class="block w-full bg-yellow-400 hover:bg-yellow-300 p-4 rounded text-yellow-900 hover:text-yellow-800 transition duration-300">Log In</button>
                             </div>
                 </Link>
             </form>

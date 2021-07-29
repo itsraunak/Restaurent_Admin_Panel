@@ -1,6 +1,7 @@
-import Addcatagory from '../components/Form/addCatagory'
+// import login from '../components/Form/Login'
 
 import { Link } from '@material-ui/core'
+import login from '../components/Form/Login'
 
 const Home = () =>
 {
@@ -11,7 +12,7 @@ const Home = () =>
         <Sidebar />
         <div className="w-screen gap-4">
           <Header /> */}
-      <Addcatagory />
+      <login />
           {/* <Deliveryboy />
           <Container />
           <Menu />
